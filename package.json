@@ -1,5 +1,5 @@
 {
-  "name": "@disaythis/react-typescript-component-generator",
+  "name": "@disaythis/gen-rtsc",
   "version": "1.0.0",
   "description": "Component generator for typescript based react aaplication",
   "main": "index.js",
