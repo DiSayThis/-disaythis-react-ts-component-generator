@@ -1,0 +1,34 @@
+{
+  "name": "@disaythis/react-typescript-component-generator",
+  "version": "1.0.0",
+  "description": "Component generator for typescript based react aaplication",
+  "main": "index.js",
+  "bin": {
+    "gen-rtsc": "index.js"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DiSayThis/-disaythis-react-ts-component-generator.git"
+  },
+  "keywords": [
+    "typescript",
+    "react",
+    "component",
+    "generator"
+  ],
+  "author": "Izotov Dmitriy <disaythis@gmail.com>",
+  "license": "ISC",
+  "homepage": "https://github.com/DiSayThis/-disaythis-react-ts-component-generator.git",
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "commander": "^2.17.1"
+  },
+  "bugs": {
+    "url": "https://github.com/DiSayThis/-disaythis-react-ts-component-generator/issues"
+  },
+  "devDependencies": {}
+}
