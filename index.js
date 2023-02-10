@@ -37,5 +37,8 @@ program
   .action((componentName) => {
     generateReactContainerComponent(componentName);
   });
+
+program.description("Generate a stateless component with css modules").action((componentName) => {
+  generateReactStatelessComponentCss(componentName);
+});
 program.parse(process.argv);
-console.log(process.argv);

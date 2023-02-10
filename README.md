@@ -1,59 +1,66 @@
-# React Typescript Component Generator
+<h1 align="center"> React Typescript Component Generator</h1>
 
-[Original package](https://www.npmjs.com/package/react-typescript-component-generator)
+I modified [this package](https://www.npmjs.com/package/react-typescript-component-generator) for my needs.
+
 React Typescript Component Generator is a cli for generating react component for typescript based architucture.
+
+<h2 align="center">
+	<img width="320" src="assets/img/dir.PNG" alt="Open Weather">
+</h2>
 
 ## Install
 
 ```bash
 # Global installation
-$ npm install --global react-typescript-component-generator
+$ npm install --global @disaythis/react-typescript-component-generator
 # Local installation
-$ npm install --save-dev react-typescript-component-generator
+$ npm install --save-dev @disaythis/react-typescript-component-generator
 ```
 
 ## Usage
 
-`<componentName>` is the name of component that can be with or without directory
+```bash
+$ gen-rtsc <componentName>
+```
 
-eg:
+`<componentName>` is the name of component that can be with or without directory.
 
-- `src/webparts/webpartName/components/ComponentName`
-
-  this will generate component named _`ComponentName`_ in the directory _`./src/webparts/webpartName/components/ComponentName`_
+- `./src/components/ComponentName`
+  this will generate component named _`ComponentName`_ in the directory _`./src/components/ComponentName`_
 
 - `ComponentName`
-
   this will generate component named _`ComponentName`_ in the directory _`./ComponentName`_
 
-  ### Generate React Stateless Component with css modules
+### Generate React Stateless Component with css modules
 
 ```bash
-$ grc cssStatelessComponent <componentName>
+$ gen-rtsc cssStatelessComponent <componentName>
 # or
-$ grc m <componentName>
+$ gen-rtsc m <componentName>
+# or
+$ gen-rtsc <componentName>
 ```
 
 ### Generate React Stateless Component scss
 
 ```bash
-$ grc statelessComponent <componentName>
+$ gen-rtsc statelessComponent <componentName>
 # or
-$ grc s <componentName>
+$ gen-rtsc s <componentName>
 ```
 
 ### Generate React Class Component scss
 
 ```bash
-$ grc classComponent <componentName>
+$ gen-rtsc classComponent <componentName>
 # or
-$ grc c <componentName>
+$ gen-rtsc c <componentName>
 ```
 
 ### Generate React Redux Container Component scss
 
 ```bash
-$ grc containerComponent <componentName>
+$ gen-rtsc containerComponent <componentName>
 # or
-$ grc r <componentName>
+$ gen-rtsc r <componentName>
 ```
