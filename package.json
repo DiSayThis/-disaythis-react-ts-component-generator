@@ -1,6 +1,6 @@
 {
   "name": "@disaythis/gen-rtsc",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Component generator for typescript based react aaplication",
   "main": "index.js",
   "bin": {
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/DiSayThis/disaythis-gen-rtsc"
+    "url": "git+https://github.com/DiSayThis/disaythis-gen-rtsc.git"
   },
   "keywords": [
     "typescript",
@@ -26,5 +26,9 @@
   "dependencies": {
     "chalk": "^2.4.1",
     "commander": "^2.17.1"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/DiSayThis/disaythis-gen-rtsc/issues"
+  },
+  "devDependencies": {}
 }

@@ -15,7 +15,7 @@ module.exports = (name) => {
 
       const indexFile = `${name}/index.ts`;
       const componentFile = `${name}/${componentName}.tsx`;
-      const propsInterfaceFile = `${name}/I${componentName}.props.ts`;
+      const propsInterfaceFile = `${name}/I${componentName}Props.ts`;
       const stylesFile = `${name}/${componentName}.module.scss`;
       const styleDeclarationsFile = `${name}/${componentName}.module.scss.ts`;
 
@@ -47,7 +47,7 @@ const index = (componentName) => `export * from './${componentName}';`;
 
 const component = (componentName) =>
   `import * as React from 'react';
-import { I${componentName}Props } from './I${componentName}.props';
+import { I${componentName}Props } from './I${componentName}Props';
 import styles from './${componentName}.module.scss';
 
 const ${componentName}: React.SFC<I${componentName}Props> = (props) => {
