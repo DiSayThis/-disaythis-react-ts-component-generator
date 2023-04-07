@@ -17,7 +17,7 @@ module.exports = (name) => {
       const componentFile = `${name}/${componentName}.tsx`;
       const propsInterfaceFile = `${name}/I${componentName}Props.ts`;
       const stylesFile = `${name}/${componentName}.module.scss`;
-      const styleDeclarationsFile = `${name}/${componentName}.module.scss.ts`;
+      // const styleDeclarationsFile = `${name}/${componentName}.module.scss.ts`;
 
       fs.appendFile(indexFile, index(componentName), (err) => {
         if (err) errorLog(err.message);
@@ -36,7 +36,7 @@ module.exports = (name) => {
           errorLog(err.message);
         } else {
           successLog(`'${stylesFile}' created.`);
-          fs.appendFile(styleDeclarationsFile, styleDeclarations(componentName), (err) => {});
+          // fs.appendFile(styleDeclarationsFile, styleDeclarations(componentName), (err) => {});
         }
       });
     }
@@ -50,7 +50,7 @@ const component = (componentName) =>
 import { I${componentName}Props } from './I${componentName}Props';
 import styles from './${componentName}.module.scss';
 
-const ${componentName}: React.SFC<I${componentName}Props> = (props) => {
+const ${componentName} = (props:I${componentName}Props) : JSX.Element=> {
   return (
     <div className={\`\${styles.${toCamelCase(componentName)}}\`}>
       <h3>${componentName} Stateless Component!</h3>

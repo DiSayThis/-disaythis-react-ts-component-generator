@@ -5,16 +5,16 @@ I modified [this package](https://www.npmjs.com/package/react-typescript-compone
 React Typescript Component Generator is a cli for generating react component for typescript based architucture.
 
 <h2 align="center">
-	<img width="320" src="assets/img/dir.PNG" alt="Open Weather">
+	<img width="320" src="assets/img/dir.PNG" alt="gen-rtsc">
 </h2>
 
 ## Install
 
 ```bash
 # Global installation
-$ npm install --global @disaythis/react-typescript-component-generator
+$ npm install --global @disaythis/gen-rtsc
 # Local installation
-$ npm install --save-dev @disaythis/react-typescript-component-generator
+$ npm install --save-dev @disaythis/gen-rtsc
 ```
 
 ## Usage

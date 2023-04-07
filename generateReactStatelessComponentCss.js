@@ -43,14 +43,15 @@ module.exports = (name) => {
   });
 };
 
-const index = (componentName) => `export * from './${componentName}';`;
+const index = (componentName) => `export * from './${componentName}';
+`;
 
 const component = (componentName) =>
   `import * as React from 'react';
 import { I${componentName}Props } from './I${componentName}Props';
 import styles from './${componentName}.module.css';
 
-const ${componentName}: React.SFC<I${componentName}Props> = (props) => {
+const ${componentName} = (props:I${componentName}Props) : JSX.Element=> {
   return (
     <div className={\`\${styles.${toCamelCase(componentName)}}\`}>
       <h3>${componentName} Stateless Component!</h3>
@@ -59,25 +60,17 @@ const ${componentName}: React.SFC<I${componentName}Props> = (props) => {
 };
 
 export default ${componentName};
+
 `;
 
 const propsInterface = (componentName) =>
   `export interface I${componentName}Props {}
+
 `;
 
 const styles = (componentName) =>
   `.${toCamelCase(componentName)} {
   display: block;
 }
-`;
 
-const styleDeclarations = (componentName) =>
-  `/* tslint:disable */
-  require('./${componentName}.module.scss');
-  const styles = {
-    ${toCamelCase(componentName)}: '${toCamelCase(componentName)}_613d8040',
-  };
-
-  export default styles;
-  /* tslint:enable */
 `;
