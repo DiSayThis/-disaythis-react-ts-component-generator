@@ -43,7 +43,9 @@ module.exports = (name) => {
   });
 };
 
-const index = (componentName) => `export * from './${componentName}';`;
+const index = (componentName) => `export { default } from './${componentName}';
+
+`;
 
 const component = (componentName) =>
   `import * as React from 'react';
@@ -59,16 +61,19 @@ const ${componentName} = (props:I${componentName}Props) : JSX.Element=> {
 };
 
 export default ${componentName};
+
 `;
 
 const propsInterface = (componentName) =>
   `export interface I${componentName}Props {}
+
 `;
 
 const styles = (componentName) =>
   `.${toCamelCase(componentName)} {
   display: block;
 }
+
 `;
 const styleDeclarations = (componentName) =>
   `/* tslint:disable */
@@ -79,4 +84,5 @@ const styleDeclarations = (componentName) =>
 
   export default styles;
   /* tslint:enable */
+  
 `;

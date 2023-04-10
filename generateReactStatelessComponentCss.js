@@ -43,7 +43,8 @@ module.exports = (name) => {
   });
 };
 
-const index = (componentName) => `export * from './${componentName}';
+const index = (componentName) => `export { default } from './${componentName}';
+
 `;
 
 const component = (componentName) =>
