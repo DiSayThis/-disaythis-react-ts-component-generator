@@ -48,11 +48,12 @@ const index = (componentName) => `export { default } from './${componentName}';
 `;
 
 const component = (componentName) =>
-  `import * as React from 'react';
+  `import { FC } from 'react';
+  
 import { I${componentName}Props } from './I${componentName}Props';
 import styles from './${componentName}.module.css';
 
-const ${componentName} = (props:I${componentName}Props) : JSX.Element=> {
+const ${componentName} : FC = (props:I${componentName}Props) => {
   return (
     <div className={\`\${styles.${toCamelCase(componentName)}}\`}>
       <h3>${componentName} Stateless Component!</h3>

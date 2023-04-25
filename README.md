@@ -31,36 +31,12 @@ $ gen-rtsc <componentName>
 - `ComponentName`
   this will generate component named _`ComponentName`_ in the directory _`./ComponentName`_
 
-### Generate React Stateless Component with css modules
+### Generate React Stateless Component
 
 ```bash
-$ gen-rtsc cssStatelessComponent <componentName>
+$ gen-rtsc css <componentName> //  Generate React Stateless Component css
 # or
-$ gen-rtsc m <componentName>
+$ gen-rtsc scss <componentName> // Generate React Stateless Component scss
 # or
-$ gen-rtsc <componentName>
-```
-
-### Generate React Stateless Component scss
-
-```bash
-$ gen-rtsc statelessComponent <componentName>
-# or
-$ gen-rtsc s <componentName>
-```
-
-### Generate React Class Component scss
-
-```bash
-$ gen-rtsc classComponent <componentName>
-# or
-$ gen-rtsc c <componentName>
-```
-
-### Generate React Redux Container Component scss
-
-```bash
-$ gen-rtsc containerComponent <componentName>
-# or
-$ gen-rtsc r <componentName>
+$ gen-rtsc <componentName> // Generate React Stateless Component scss
 ```
