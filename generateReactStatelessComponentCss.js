@@ -53,7 +53,7 @@ const component = (componentName) =>
 import { I${componentName}Props } from './I${componentName}Props';
 import styles from './${componentName}.module.css';
 
-const ${componentName}: FC = (props:I${componentName}Props) => {
+const ${componentName}: FC<I${componentName}Props> = (props) => {
   return (
     <div className={\`\${styles.${toCamelCase(componentName)}}\`}>
       <h3>${componentName} Stateless Component!</h3>
